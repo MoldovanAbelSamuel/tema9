@@ -13,6 +13,11 @@ public class Programmer extends Employee{
         this.language = language;
     }
 
+    @Override
+    public String getPosition() {
+        return "programmer";
+    }
+
     public String getLanguage() {
         return language;
     }
