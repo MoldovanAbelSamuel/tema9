@@ -8,9 +8,8 @@ public class Programmer extends Employee{
     private final String language;
 
 
-
-    public Programmer(String getFirstName, String getLastName, String getBirthday, String getAdress, String dateOfEmployment, String language) {
-        super(getFirstName, getLastName, getBirthday, getAdress, dateOfEmployment, position);
+    public Programmer(String firstName, String lastName, String birthday, String adress, String dateOfEmployment, String language) {
+        super(firstName, lastName, birthday, adress, dateOfEmployment, position);
         this.language = language;
     }
 

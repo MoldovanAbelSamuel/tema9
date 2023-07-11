@@ -7,6 +7,11 @@ public class Employee implements Person{
     private final String dateOfEmployment;
     private final String position;
 
+    private String FirstName;
+    private String LastName;
+    private String Birthday;
+    private String Adress;
+
     public String fullName;
 
 
@@ -19,33 +24,38 @@ public class Employee implements Person{
         return position;
     }
 
+    public Employee(String firstName, String lastName, String birthday, String adress, String dateOfEmployment, String position) {
+        this.dateOfEmployment = dateOfEmployment;
+        this.position = position;
+        FirstName = firstName;
+        LastName = lastName;
+        Birthday = birthday;
+        Adress = adress;
+        fullName = FirstName + " " + LastName;
+    }
+
     @Override
     public String getFirstName() {
-        return "";
+        return FirstName;
     }
 
     @Override
     public String getLastName() {
-        return "";
+        return LastName;
     }
 
     @Override
     public String getBirthday() {
-        return "";
+        return Birthday;
     }
 
     @Override
     public String getAdress() {
-        return "";
+        return Adress;
     }
 
-    public Employee(String getFirstName, String getLastName, String getBirthday, String getAdress, String dateOfEmployment, String position) {
-        this.dateOfEmployment = dateOfEmployment;
-        this.position = position;
-        fullName = getFirstName + " " + getLastName;
-    }
 
-    public void getFullName() {
+    public void getfullName() {
         System.out.println("The complete name of this employee is: " + fullName);
     }
 }
